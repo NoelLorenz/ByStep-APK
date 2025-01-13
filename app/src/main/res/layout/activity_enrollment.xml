@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Enrollment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wayt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <ImageView
+            android:id="@+id/processBgEnroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bgblue"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:overScrollMode="never"
+            android:scrollbars="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/enrollHeaderBG"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/processhead"
+                            android:scaleType="centerCrop"/>
+                        <LinearLayout
+                            android:id="@+id/headerBtns"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.1"
+                            android:onClick="mainMenu"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/enrol_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:background="@drawable/arrow_circle_btnbg"
+                                android:src="@drawable/arrow_backtomain" />
+
+                            <TextView
+                                android:id="@+id/headerEnroll"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="Home"
+                                android:textColor="@color/processWhite"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guide"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:layout_constraintGuide_percent="0.03"
+                            android:orientation="vertical"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="4dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="ENROLLMENT"
+                            android:textColor="@color/white"
+                            android:textSize="48sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/guide" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/procedure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Procedure"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="20sp"
+                    android:textColor="@color/processDark"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/procedure"
+                    android:layout_gravity="center">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/step1"
+                        style="@style/CustomCard"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_max="500dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:contentPadding="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+                        <include layout="@layout/enroll_step1" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/step_insert"
+                        style="@style/CustomCard"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_max="500dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:contentPadding="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/step1">
+
+                        <include layout="@layout/enroll_step_insert" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/step2"
+                        style="@style/CustomCard"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_max="500dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:contentPadding="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/step_insert">
+
+                        <include layout="@layout/enroll_step2" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/step3"
+                        style="@style/CustomCard"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_max="500dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:contentPadding="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/step2">
+
+                        <include layout="@layout/enroll_step3" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/step4"
+                        style="@style/CustomCard"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_max="500dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:contentPadding="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/step3">
+
+                        <include layout="@layout/enroll_step4" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/step5"
+                        style="@style/CustomCard"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_max="500dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:contentPadding="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/step4">
+
+                        <include layout="@layout/enroll_step5" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/step6"
+                        style="@style/CustomCard"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_max="500dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:contentPadding="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/step5">
+
+                        <include layout="@layout/enroll_step6" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/step7"
+                        style="@style/CustomCard"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_max="500dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:contentPadding="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/step6">
+
+                        <include layout="@layout/enroll_step7" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/step8"
+                        style="@style/CustomCard"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_max="500dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:contentPadding="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/step7">
+
+                        <include layout="@layout/enroll_step8" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/step9"
+                        style="@style/CustomCard"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_max="500dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:contentPadding="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/step8">
+
+                        <include layout="@layout/enroll_step9" />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+    <item
+        android:id="@+id/navForms"
+        android:title="Documents"
+        android:icon="@drawable/folder">
+        <menu>
+            <item
+                android:id="@+id/navDoc1"
+                android:title="Affidavit of Loss" />
+            <item
+                android:id="@+id/navDoc2"
+                android:title="Birth Certificate"/>
+            <item
+                android:id="@+id/navDoc3"
+                android:title="Blue Form (Student's Copy)" />
+            <item
+                android:id="@+id/navDoc4"
+                android:title="Clearance" />
+            <item
+                android:id="@+id/navDoc5"
+                android:title="Enrollment Form" />
+            <item
+                android:id="@+id/navDoc6"
+                android:title="Examination Permit" />
+            <item
+                android:id="@+id/navDoc7"
+                android:title="Excuse Slip" />
+            <item
+                android:id="@+id/navDoc8"
+                android:title="Final Grades Form" />
+            <item
+                android:id="@+id/navDoc9"
+                android:title="Good Moral Character" />
+
+            <item
+                android:id="@+id/navDoc10"
+                android:title="Honorable Dismissal" />
+            <item
+                android:id="@+id/navDoc11"
+                android:title="Library Card" />
+            <item
+                android:id="@+id/navDoc12"
+                android:title="School ID" />
+            <item
+                android:id="@+id/navDoc13"
+                android:title="SHS Report Card (Form 138)" />
+            <item
+                android:id="@+id/navDoc14"
+                android:title="Student Information Sheet" />
+            <item
+                android:id="@+id/navDoc15"
+                android:title="Transcript of Records" />
+        </menu>
+    </item>
+
+    <item android:title="Locations"
+        android:icon="@drawable/location">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/navLoc1"
+                    android:title="Assessor's Office" />
+                <item
+                    android:id="@+id/navLoc2"
+                    android:title="Building A" />
+                <item
+                    android:id="@+id/navLoc3"
+                    android:title="Building B" />
+                <item
+                    android:id="@+id/navLoc4"
+                    android:title="Building C" />
+                <item
+                    android:id="@+id/navLoc5"
+                    android:title="Building D" />
+                <item
+                    android:id="@+id/navLoc6"
+                    android:title="EVP Office" />
+                <item
+                    android:id="@+id/navLoc7"
+                    android:title="Guidance Office" />
+                <item
+                    android:id="@+id/navLoc8"
+                    android:title="HAC's Office" />
+                <item
+                    android:id="@+id/navLoc9"
+                    android:title="Internet Laboratory" />
+                <item
+                    android:id="@+id/navLoc10"
+                    android:title="Library" />
+                <item
+                    android:id="@+id/navLoc11"
+                    android:title="Registrar's Office" />
+                <item
+                    android:id="@+id/navLoc12"
+                    android:title="SaaS Office" />
+                <item
+                    android:id="@+id/navLoc13"
+                    android:title="SSC Office" />
+                <item
+                    android:id="@+id/navLoc14"
+                    android:title="Treasurer's Office" />
+            </group>
+        </menu>
+    </item>
+</menu>

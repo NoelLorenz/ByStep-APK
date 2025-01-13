@@ -1,0 +1,11 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/blue"> <!-- Ripple color is blue -->
+
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp"/>
+            <solid android:color="@color/blue" /><!-- Mask color (if any) -->
+        </shape>
+    </item>
+
+</ripple>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:elevation="10dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Light"
+    app:title="BySTep"
+    android:backgroundTint="@color/white"
+    app:navigationIcon="@drawable/menu_blue">
+    <LinearLayout
+        android:id="@+id/customToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <ImageButton
+            android:id="@+id/navToggleButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/menu_blue"
+            android:background="@color/transparent"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/logo_no_border"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/gct_blue"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/search_blue"
+            android:background="@drawable/searchbutton"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+
+
+
+</androidx.appcompat.widget.Toolbar>

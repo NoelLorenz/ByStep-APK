@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Design.Light.NoActionBar"> </style>
+
+    <style name="CustomCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">0dp</item>
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+    </style>
+
+    <style name="cardCustom" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">0dp</item>
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+    </style>
+
+    <style name="GlossaryCustomCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">1dp</item>
+        <item name="cardBackgroundColor">@color/white</item>
+    </style>
+
+    <style name="CustomNavigationViewTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorSurface">@color/white</item>
+        <item name="textAppearanceSubtitle1">@style/CustomNavigationMenuText</item>
+        <item name="navigationViewStyle">@style/CustomNavigationViewStyle</item>
+        <item name="listPreferredItemHeightSmall">35dp</item>
+    </style>
+
+    <style name="CustomNavigationMenuText" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
+    <!-- Custom NavigationView Style -->
+    <style name="CustomNavigationViewStyle" parent="Widget.MaterialComponents.NavigationView">
+        <item name="itemTextColor">@color/itemBlue</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+
+    </style>
+
+
+
+    <style name="AppTheme.Dark" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/blue</item>
+    </style>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/wayt</item>
+        <item name="colorAccent">@color/blue</item>
+    </style>
+
+
+
+
+</resources>

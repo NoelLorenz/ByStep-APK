@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent2">#80000000</color>
+    <color name="stepColor">#D7D7D7</color>
+    <color name="highlight_color">#FFEB3B</color> <!-- Yellow for highlight -->
+     <!-- Default white color  -->
+    <color name="default_card_color">#FFFFFF</color>
+
+    <color name="blue">#333399</color>
+    <color name="itemBlue">#333399</color>
+    <color name="vlu">#7DA7D9</color>
+    <color name="wayt">#F3F4F6</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorBlue">#333399</color>
+    <color name="finish">#333399</color>
+
+
+    <!-- Process -->
+    <color name="processWhite">#FFFFFFFF</color>
+    <color name="processDark">#252728</color>
+
+    <color name="glossaryBlue">#333399</color>
+    <color name="highlight_color_dark_mode">#E3D585</color> <!-- Example yellow for dark mode -->
+    <color name="highlight_color_light_mode">#333399</color>
+
+    <color name="mainPage">#333399</color>
+    <color name="disabled_card_color">#80252728</color>
+    <color name="hyperlinkColor">#333399</color>
+    <color name="gold">#F1D33E</color>
+    <color name="dark">#252728</color>
+
+    <color name="cardInside">#7da7d9</color>
+
+
+
+
+
+ </resources>

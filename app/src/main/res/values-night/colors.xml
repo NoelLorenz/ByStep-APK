@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#E3D585</color>
+    <color name="vlu">#B3A96E</color>
+    <color name="wayt">#121212</color>
+    <color name="white">#252728</color>
+    <color name="itemBlue">#e5e5e5</color>
+    <color name="finish">#252728</color>
+
+
+    <!-- Process -->
+    <color name="processWhite">#252728</color>
+    <color name="processDark">#e5e5e5</color>
+    <!--
+      -->
+    <color name="glossaryBlue">#FFFFFF</color>
+    <color name="highlight_color_dark_mode">#E3D585</color> <!-- Example yellow for dark mode -->
+    <color name="highlight_color_light_mode">#333399</color>
+    <color name="hyperlinkColor">#e3d585</color>
+
+
+    <color name="disabled_card_color">#80252728</color>
+    <color name="gold">#F1D33E</color>
+    <color name="dark">#252728</color>
+    <color name="mainPage">#e5e5e5</color>
+    <color name="cardInside">#E3D585</color>
+
+</resources>

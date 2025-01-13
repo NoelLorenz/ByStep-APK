@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/card_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="@color/white"/> <!-- Fallback color if image fails -->
+    </item>
+    <item>
+        <bitmap
+            android:src="@drawable/processhead"
+            android:tileMode="disabled"
+            android:gravity="center" />
+    </item>
+</layer-list>
+
